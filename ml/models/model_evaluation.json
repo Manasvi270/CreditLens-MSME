@@ -1,0 +1,88 @@
+{
+  "primary_model_calibrated": {
+    "roc_auc": 0.7902,
+    "pr_auc": 0.5942,
+    "brier_score": 0.1143,
+    "precision": 0.7,
+    "recall": 0.2414,
+    "f1_score": 0.359,
+    "confusion_matrix": {
+      "true_negatives": 128,
+      "false_positives": 3,
+      "false_negatives": 22,
+      "true_positives": 7
+    },
+    "calibration_curve": {
+      "prob_true": [
+        0.0654,
+        0.3243,
+        0.5385,
+        1.0
+      ],
+      "prob_pred": [
+        0.1062,
+        0.2675,
+        0.4973,
+        0.6821
+      ]
+    }
+  },
+  "primary_model_uncalibrated": {
+    "roc_auc": 0.7852,
+    "pr_auc": 0.5808,
+    "brier_score": 0.1127,
+    "precision": 0.625,
+    "recall": 0.3448,
+    "f1_score": 0.4444,
+    "confusion_matrix": {
+      "true_negatives": 125,
+      "false_positives": 6,
+      "false_negatives": 19,
+      "true_positives": 10
+    },
+    "calibration_curve": {
+      "prob_true": [
+        0.0654,
+        0.2647,
+        0.8571,
+        0.5,
+        1.0
+      ],
+      "prob_pred": [
+        0.0826,
+        0.2799,
+        0.5053,
+        0.675,
+        0.8808
+      ]
+    }
+  },
+  "challenger_model_xgb": {
+    "roc_auc": 0.7181,
+    "pr_auc": 0.4535,
+    "brier_score": 0.1234,
+    "precision": 0.5625,
+    "recall": 0.3103,
+    "f1_score": 0.4,
+    "confusion_matrix": {
+      "true_negatives": 124,
+      "false_positives": 7,
+      "false_negatives": 20,
+      "true_positives": 9
+    },
+    "calibration_curve": {
+      "prob_true": [
+        0.0877,
+        0.2381,
+        0.5625,
+        0.5556
+      ],
+      "prob_pred": [
+        0.0807,
+        0.2795,
+        0.4966,
+        0.681
+      ]
+    }
+  }
+}
